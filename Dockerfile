@@ -1,6 +1,7 @@
 FROM python:3-alpine3.10
 LABEL author=Ijya
 EXPOSE 5000
+RUN mkdir /flask-hello-world
 ADD  . /flask-hello-world 
 RUN  cd flask-hello-world && \
     pip3 install flask
